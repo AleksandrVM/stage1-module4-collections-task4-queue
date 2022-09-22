@@ -9,7 +9,7 @@ public class DishOrderDeterminer {
         for (int i = 1; i <= numberOfDishes; i++)
             dishes.offer(i);
         int count = 1;
-        while (dishes.size() != 0){
+        while (!dishes.isEmpty()){
             if (count % everyDishNumberToEat != 0){
                 dishes.offer(dishes.poll());
             }
